@@ -5,15 +5,15 @@ import {ExperienceComponent} from './sections/experience/experience.component';
 import {ProjectsComponent} from './sections/projects/projects.component';
 import {EducationComponent} from './sections/education/education.component';
 import {SkillsComponent} from './sections/skills/skills.component';
+import {ContactComponent} from './sections/contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, EducationComponent, SkillsComponent],
+  imports: [RouterOutlet, AboutComponent, ExperienceComponent, ProjectsComponent, EducationComponent, SkillsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styles: [],
 })
 export class AppComponent {
   title = 'portfolio';
-  YEAR = new Date().getFullYear();
 }

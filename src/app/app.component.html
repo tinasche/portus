@@ -1,18 +1,11 @@
 <router-outlet/>
-<main class=" md:w-[40%] sm:w-[80%] md:mx-auto mx-3 ">
+<main class="w-full mx-4 px-2 sm:mx-auto sm:w-[65%] md:w-[40%]">
   <app-about></app-about>
   <app-experience></app-experience>
   <app-education></app-education>
   <app-skills></app-skills>
   <app-projects></app-projects>
-  <section class="mb-2 flex justify-between py-4">
-    <p class="text-sm font-light"><span></span>{{ YEAR }} | theasbyte</p>
-    <div class=" flex gap-x-3">
-      <a href="https://github.com/tinasche" target="_blank"><i class="bi bi-github text-xl"></i></a>
-      <a href="https://linkedin.com/tinasche" target="_blank"><i class="bi bi-linkedin text-xl"></i></a>
-      <a href="https://x.com/theasbyte" target="_blank"><i class="bi bi-twitter-x text-xl"></i></a>
-      <a href="mailto:tchita56@gmail.com" target="_blank"><i class="bi bi-envelope-fill text-xl"></i></a>
-    </div>
-  </section>
+  <app-contact></app-contact>
+
 </main>
 

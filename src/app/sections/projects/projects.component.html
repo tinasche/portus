@@ -1,7 +1,8 @@
 <section class="my-5 py-2">
-<div class="flex md:flex-row flex-col">
+<!--<div class="flex md:flex-row flex-col gap-4 flex-wrap">-->
+<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
   @for (project of projects; track project.name) {
-    <p>{{project.name}}</p>
+    <app-project-card [projectItem]="project"></app-project-card>
   }
 </div>
 </section>

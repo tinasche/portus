@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@plugin "@tailwindcss/typography";
 
 
 @tailwind base;
@@ -9,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: #2d3436;
 }
 
 .text-shade {
@@ -16,5 +18,5 @@ body {
 }
 
 .section-title {
-  @apply font-semibold text-gray-800 text-xl my-2 px-1
+  @apply font-semibold bg-gradient-to-r from-gray-800 to-slate-500 bg-clip-text text-transparent text-xl my-2 px-1
 }
