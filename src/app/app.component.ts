@@ -6,7 +6,6 @@ import {ProjectsComponent} from './sections/projects/projects.component';
 import {EducationComponent} from './sections/education/education.component';
 import {SkillsComponent} from './sections/skills/skills.component';
 import {ContactComponent} from './sections/contact/contact.component';
-import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -17,19 +16,11 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      AOS.refresh()
-    }, 500)
+
   }
 
   ngOnInit(): void {
-    AOS.init({
-      delay: 1500,
-      once: true,
-      duration: 3000,
-      easing: 'ease-in-out',
-      startEvent: 'scroll'
-    })
+
   }
 
   title = 'portfolio';
