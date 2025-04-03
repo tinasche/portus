@@ -6,7 +6,7 @@ import {ProjectsComponent} from './sections/projects/projects.component';
 import {EducationComponent} from './sections/education/education.component';
 import {SkillsComponent} from './sections/skills/skills.component';
 import {ContactComponent} from './sections/contact/contact.component';
-import * as AOS from 'aos';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
