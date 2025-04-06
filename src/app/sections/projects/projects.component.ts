@@ -21,7 +21,7 @@ type ProjectInfo = {
 export class ProjectsComponent {
 
   projects: ProjectInfo[] = [
-    {name: 'Task Tracker', description: 'CLI based tool to keep track of your tasks. ', image: '', stack: ['Java', 'Gradle'], url: 'https://github.com/tinasche/tasker'},
+    {name: 'Task Tracker', description: 'CLI based tool to keep track of your tasks. ', image: '', stack: ['Java', 'Gradle', 'Apache Commons CLI', 'h2'], url: 'https://github.com/tinasche/tasker'},
     {name: 'Workout Tracker', description: 'CLI based tool to keep track of your tasks. ', image: '', stack: ['Spring Boot', 'Angular'], url: 'https://github.com/tinasche/workit'},
     {name: 'Blogging platform', description: 'CLI based tool to keep track of your tasks. ', image: '', stack: ['.NET Core', 'NextJS'], url: 'https://github.com/tinasche/blogformer'},
     {name: 'Github user activity', description: 'Get information about a github user from your commandline. You can see the user\'s repositories, projects and latest activity on their profile.', image: '', stack: ['Java', 'Gradle'], url: 'https://github.com/tinasche/tasker'},
