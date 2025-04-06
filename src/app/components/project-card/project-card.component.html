@@ -4,9 +4,9 @@
   <div class="p-4">
     <h2 class="text-xl  font-semibold">{{ projectItem.name }}</h2>
     <p class="mt-auto prose text-pretty text-gray-600 text-sm sm:h-[6rem] h-fit ">{{ projectItem.description }}</p>
-    <ul class="flex gap-x-1.5 mt-2">
+    <ul class="flex gap-1.5 mt-2 flex-wrap">
       @for (stackItem of projectItem.stack; track stackItem) {
-        <li class="text-xs bg-gray-200  text-slate-600 rounded py-0.5 px-1">{{ stackItem }}</li>
+        <li class="text-xs bg-gray-200 text-slate-600 rounded py-0.5 px-1">{{ stackItem }}</li>
       }
     </ul>
     <div class="flex justify-between items-center mt-4">
