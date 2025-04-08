@@ -1,17 +1,18 @@
 <div
   class="max-w-full h-auto overflow-hidden p-4 bg-white rounded shadow hover:shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out animate__animated animate__fadeInUp">
   <!--  <img class="w-full h-40 object-cover rounded-t-lg" alt="Card Image" src="https://via.placeholder.com/150">-->
-  <div class="p-1.5">    <h2 class="text-xl font-semibold">{{ projectItem.name }}</h2>
-    <p class="mt-auto prose text-pretty text-gray-600 text-sm  ">{{ projectItem.description }}</p>
-    <ul class="flex gap-1.5 mt-2 flex-wrap">
+  <div class="p-1.5">    <h2 class="text-lg font-semibold">{{ projectItem.name }}</h2>
+    <p class="mt-auto prose text-pretty text-gray-600 text-sm">{{ projectItem.description }}</p>
+    <ul class="flex gap-0.5 mt-2 flex-wrap">
       @for (stackItem of projectItem.stack; track stackItem) {
-        <li class="text-xs bg-gray-200 text-slate-600 rounded py-0.5 px-1">{{ stackItem }}</li>
+        <li class="text-xs font-light bg-gray-200 text-slate-800 rounded p-1">{{ stackItem }}</li>
       }
     </ul>
     <div class="flex justify-between items-center mt-4">
       <a [href]="projectItem.url"
-         class="bg-slate-500 hover:bg-slate-600 text-white text-sm px-3 py-1.5 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400">View
-        on GitHub</a>
+         class="lowercase text-white text-sm p-1.5 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <i class="bi bi-github text-gray-700 text-lg hover:text-orange-600"></i>
+      </a>
     </div>
   </div>
 </div>
