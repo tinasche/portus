@@ -8,6 +8,6 @@ import {Component} from '@angular/core';
   styles: ``
 })
 export class SkillsComponent {
-  skills: string[] = ['.NET Core', 'Spring Boot', 'TypeScript', 'Python', 'Docker', 'AWS', 'Azure', 'MS Sql Server', 'Postgres', 'Laravel'];
+  skills: string[] = ['Azure', '.NET Core', 'Spring Boot', 'TypeScript', 'Python', 'Docker', 'AWS', 'Flutter', 'MS Sql Server', 'Postgres', 'Jetpack Compose' ,'Laravel'];
 
 }
