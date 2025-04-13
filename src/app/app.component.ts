@@ -14,6 +14,6 @@ import {ContactComponent} from './sections/contact/contact.component';
   templateUrl: './app.component.html',
   styles: [],
 })
-export class AppComponent implements  {
+export class AppComponent  {
   title = 'portfolio';
 }
