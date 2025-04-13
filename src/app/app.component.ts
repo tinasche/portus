@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {AboutComponent} from './sections/about/about.component';
 import {ExperienceComponent} from './sections/experience/experience.component';
@@ -14,14 +14,6 @@ import {ContactComponent} from './sections/contact/contact.component';
   templateUrl: './app.component.html',
   styles: [],
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  ngAfterViewInit(): void {
-
-  }
-
-  ngOnInit(): void {
-
-  }
-
+export class AppComponent implements  {
   title = 'portfolio';
 }
